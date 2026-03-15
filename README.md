@@ -269,10 +269,10 @@ RETURN
 
 ### December vs November — two different types of strength
 
-- November has one massive week, **Thanksgiving at $1.47M***, that pulls the whole month up. But outside of that one event, November's normal weeks average just $1.04M, which is nothing special. 
-- December works differently. Christmas week is actually underwhelming at $0.96M — below normal week average. But December's normal weeks are the **strongest of any month at $1.36M***, because people are naturally shopping more throughout the entire month — buying gifts, stocking up for parties, preparing for the holidays — without needing a specific event to trigger it. So when you average all of December's weeks together, it comes out higher than any other month.
+- November has one massive week, **Thanksgiving at $1.47M**, that pulls the whole month up. But outside of that one event, November's normal weeks average just $1.04M, which is nothing special. 
+- December works differently. Christmas week is actually underwhelming at $0.96M — below normal week average. But December's normal weeks are the **strongest of any month at $1.36M**, because people are naturally shopping more throughout the entire month — buying gifts, stocking up for parties, preparing for the holidays — without needing a specific event to trigger it. So when you average all of December's weeks together, it comes out higher than any other month.
 - November wins on one dramatic night. December wins because every night is busy.
-- Both end up as top two months, but they need completely different preparation — **November needs to nail Thanksgiving execution, December needs consistent inventory depth and staffing across all four weeks***, not just Christmas week.
+- Both end up as top two months, but they need completely different preparation — **November needs to nail Thanksgiving execution, December needs consistent inventory depth and staffing across all four weeks**, not just Christmas week.
 
 ---
 
@@ -280,7 +280,7 @@ RETURN
 
 - In terms of average weekly sales contribution, Thanksgiving/Black Friday leads at 32.31% ($1.5M avg), followed by Super Bowl & Valentine's (23.7%, $1.1M), Christmas (22.89%, $1.0M), and Labor Day (21.1%, $1.0M).
 - Thanksgiving dominates not just in share but in per-week value — it generates the highest average weekly revenue of any event.
-- If Walmart is allocating the same promotional budget across all four events, that's a misallocation — **Thanksgiving deserves disproportionate investment***. The product lines most likely driving Thanksgiving's spike (seasonal food, beverages, household supplies) are worth analyzing to deepen those assortments ahead of peak season.
+- If Walmart is allocating the same promotional budget across all four events, that's a misallocation — **Thanksgiving deserves disproportionate investment**. The product lines most likely driving Thanksgiving's spike (seasonal food, beverages, household supplies) are worth analyzing to deepen those assortments ahead of peak season.
 
 ---
 
@@ -293,13 +293,13 @@ RETURN
 
 ### Macro factors barely move the needle
 
-CPI, unemployment, and fuel price all show **very weak correlation*** with weekly sales (r = −0.11, −0.07, +0.01). Walmart's performance is largely insulated from broader economic shifts — customers keep coming regardless of inflation or gas prices. Notably, sales recovered in line with employment improvement (2011→2012), not against it. Walmart didn't benefit from economic stress — it recovered as the economy recovered. Store execution and location appear to matter far more than any macro variable in this dataset.
+CPI, unemployment, and fuel price all show **very weak correlation** with weekly sales (r = −0.11, −0.07, +0.01). Walmart's performance is largely insulated from broader economic shifts — customers keep coming regardless of inflation or gas prices. Notably, sales recovered in line with employment improvement (2011→2012), not against it. Walmart didn't benefit from economic stress — it recovered as the economy recovered. Store execution and location appear to matter far more than any macro variable in this dataset.
 
 ---
 
 ### The two stores worth studying closely
 
-Only Store 10 ($271.6M, 1.12x lift) and Store 19 ($206.6M, 1.10x lift) are strong on both dimensions — high overall sales and strong holiday responsiveness. Most top-revenue stores like Store 20 (the overall leader at $301.4M) are Holiday Neutral, meaning their strength comes from consistent everyday traffic alone. Stores 10 and 19 have both. That **dual strength*** is rare across 45 stores and worth a deep operational review — their practices around staffing, inventory, and promotions likely contain **lessons replicable across the broader network***.
+Only Store 10 ($271.6M, 1.12x lift) and Store 19 ($206.6M, 1.10x lift) are strong on both dimensions — high overall sales and strong holiday responsiveness. Most top-revenue stores like Store 20 (the overall leader at $301.4M) are Holiday Neutral, meaning their strength comes from consistent everyday traffic alone. Stores 10 and 19 have both. That **dual strength*** is rare across 45 stores and worth a deep operational review — their practices around staffing, inventory, and promotions likely contain **lessons replicable across the broader network**.
 
 ---
 
