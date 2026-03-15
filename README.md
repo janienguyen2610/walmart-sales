@@ -16,6 +16,7 @@ The dashboard was designed for a **board-level audience**: clean layout, dynamic
 ## 🔗 Live Dashboard
 
 📊 [View Interactive Dashboard](https://app.powerbi.com/reportEmbed?reportId=726acd5f-be36-429f-8422-30da4ca44ffe&autoAuth=true&ctid=a36450eb-db06-42a7-8d1b-026719f701e3)
+> 📁 The .pbix file is available for download!
 
 ---
 ## 📂 Data Source
@@ -210,7 +211,7 @@ Forecast Month (Year Y) = 2011 Monthly Sales × (1.026)^(Y - 2011)
 
 ### Data Model Architecture:
 ```
-Date Bridge (1)
+Date Bridge
     ├──→ Cleaned Data (*)      via YearMonth key
     └──→ Sales by Month (*)    via YearMonth key
 
@@ -359,5 +360,5 @@ walmart-sales-dashboard/
 **Janie Nguyen**  
 Financial Analyst | SQL · Excel · Power BI · DAX
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/janieanhnguyen/))
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/janieanhnguyen/)
 [![GitHub](https://img.shields.io/badge/GitHub-Profile-black)](https://github.com/janienguyen2610)
