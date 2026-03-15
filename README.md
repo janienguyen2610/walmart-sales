@@ -1,8 +1,10 @@
 # 🛒 Walmart Store Sales Performance Dashboard
 ### End-to-End Retail Analytics | SQL · Excel · Power BI · DAX
 
-![Dashboard Preview](https://github.com/janienguyen2610/walmart-sales#:~:text=Janie%20Nguyen_Walmart%20Project%20Dashboard%20Preview.pdf)
-
+**Dashboard Preview**
+| Executive Overview | Store Intelligence | Sales Outlook |
+|---|---|---|
+| ![](Janie Nguyen_Walmart Project Dashboard Preview-images-0.jpg) | ![](Janie Nguyen_Walmart Project Dashboard Preview-images-1.jpg) | ![](Janie Nguyen_Walmart Project Dashboard Preview-images-2.jpg) |
 ---
 
 ## 📌 Project Overview
@@ -324,10 +326,11 @@ walmart-sales-dashboard/
 ├── powerbi/
 │   └── Janie Nguyen_Walmart Project.pbix                 # 3-page Power BI dashboard
 │       Live: [View Dashboard](https://app.powerbi.com/reportEmbed?reportId=726acd5f-be36-429f-8422-30da4ca44ffe&autoAuth=true&ctid=a36450eb-db06-42a7-8d1b-026719f701e3)
-└── dashboard preview/
-    ├── Janie Nguyen_Walmart Project Dashboard Preview.png # Power BI preview
-    └── Janie Nguyen_Walmart Power BI Data Model.png       # Power BI model view
-```
+└── screenshots/
+    ├── Janie Nguyen_Walmart Project Dashboard Preview-images-0.jpg     # Executive Overview
+    ├── Janie Nguyen_Walmart Project Dashboard Preview-images-0.jpg     # Store Performance
+    ├── Janie Nguyen_Walmart Project Dashboard Preview-images-0.jpg     # Sales Outlook
+    └── data_model.png                                                  # Power BI model view
 
 ---
 
