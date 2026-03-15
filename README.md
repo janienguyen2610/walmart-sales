@@ -4,7 +4,7 @@
 **Dashboard Preview**
 | Executive Overview | Store Intelligence | Sales Outlook |
 |---|---|---|
-| ![](Janie Nguyen_Walmart Project Dashboard Preview-images-0.jpg) | ![](Janie Nguyen_Walmart Project Dashboard Preview-images-1.jpg) | ![](Janie Nguyen_Walmart Project Dashboard Preview-images-2.jpg) |
+| ![](Walmart_dashboard_page0.jpg) | ![](Walmart_dashboard_page1.jpg) | ![](Walmart_dashboard_page2.jpg) |
 ---
 
 ## 📌 Project Overview
@@ -331,7 +331,7 @@ walmart-sales-dashboard/
     ├── Janie Nguyen_Walmart Project Dashboard Preview-images-0.jpg     # Store Performance
     ├── Janie Nguyen_Walmart Project Dashboard Preview-images-0.jpg     # Sales Outlook
     └── data_model.png                                                  # Power BI model view
-
+```
 ---
 
 ## 🔧 Tools & Technologies
