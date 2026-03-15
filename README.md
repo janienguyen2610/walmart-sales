@@ -2,7 +2,7 @@
 ### End-to-End Retail Analytics | SQL · Excel · Power BI · DAX
 
 **Dashboard Preview**
-| Executive Overview | Store Intelligence | Sales Outlook |
+| Executive Overview | Store Performance | Sales Outlook |
 |---|---|---|
 | ![](Walmart_dashboard_page0.jpg) | ![](Walmart_dashboard_page1.jpg) | ![](Walmart_dashboard_page2.jpg) |
 ---
