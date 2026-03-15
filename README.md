@@ -20,7 +20,7 @@ The dashboard was designed for a **board-level audience**: clean layout, dynamic
 ---
 ## 📂 Data Source
 
-Raw data sourced from Kaggle's public Walmart sales dataset, widely used in data science education.  
+Raw data sourced from Kaggle's public Walmart sales dataset, widely used in data science education.
 🔗 [Walmart Sales](https://www.kaggle.com/datasets/mikhail1681/walmart-sales)
 
 - 45 stores · 3 years (2010–2012) · 6,435 weekly records
