@@ -21,7 +21,7 @@ The dashboard was designed for a **board-level audience**: clean layout, dynamic
 ## 📂 Data Source
 
 Raw data sourced from Kaggle's public Walmart sales dataset, widely used in data science education.  
-🔗 [Walmart Recruiting - Store Sales Forecasting](https://www.kaggle.com/datasets/aslanahmedov/walmart-sales-forecast)
+🔗 [Walmart Sales]([https://www.kaggle.com/datasets/aslanahmedov/walmart-sales-forecast](https://www.kaggle.com/datasets/mikhail1681/walmart-sales))
 
 - 45 stores · 3 years (2010–2012) · 6,435 weekly records
 - Original columns: Store, Date, Weekly Sales, Holiday Flag, Temperature, Fuel Price, CPI, Unemployment
