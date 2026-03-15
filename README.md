@@ -42,7 +42,7 @@ Raw data sourced from Kaggle's public Walmart sales dataset, widely used in data
 
 **Page 2 — Store Intelligence:**
 - 🟢 Star stores — Store 10 & 19 (High Performer + Holiday Driven)
-- 🟡 Inisght stores stores — Store 5, 16, 29 (Underperformer + Holiday Driven)
+- 🟡 Insight stores — Store 5, 16, 29 (Underperformer + Holiday Driven)
 - 🔴 Priority stores — Store 36, 37, 38, 44 (Underperformer + Holiday Resistant)
 - 💡 Business implications and strategic recommendations per category
 
