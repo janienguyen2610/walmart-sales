@@ -1,35 +1,54 @@
 # 🛒 Walmart Store Sales Performance Dashboard
 ### End-to-End Retail Analytics | SQL · Excel · Power BI · DAX
 
-![Dashboard Preview](https://github.com/janienguyen2610/walmart-sales/blob/237aae36aee071aad03cde97827c989bcf66fbe6/Walmart_Dashboard_Preview.png)
+![Dashboard Preview](https://github.com/janienguyen2610/walmart-sales#:~:text=Janie%20Nguyen_Walmart%20Project%20Dashboard%20Preview.pdf)
 
 ---
 
 ## 📌 Project Overview
 
-An end-to-end retail analytics project analyzing **45 Walmart stores across 3 years (2010–2012)** with **6,435 weekly sales records**. The project covers the full data pipeline — from raw SQL cleaning and aggregation, through Excel-based estimation and forecasting, to an interactive Power BI executive dashboard.
+An end-to-end retail analytics project analyzing **45 Walmart stores across 3 years (2010–2012)** with **6,435 weekly sales records**. The project covers the full data pipeline — from raw SQL cleaning and aggregation, through Excel-based estimation and forecasting, to a 3-page interactive Power BI executive dashboard.
 
-The dashboard was designed for a **board-level audience**: clean layout, dynamic KPI cards, interactive slicers, and a store performance overlap matrix that identifies which stores are truly driving results vs. which ones need attention.
+The dashboard was designed for a **board-level audience**: clean layout, dynamic KPI cards, interactive slicers, store performance overlap matrix, and forward-looking sales outlook — with business implications embedded directly into the analysis.
+
+## 🔗 Live Dashboard
+
+📊 [View Interactive Dashboard](https://app.powerbi.com/reportEmbed?reportId=726acd5f-be36-429f-8422-30da4ca44ffe&autoAuth=true&ctid=a36450eb-db06-42a7-8d1b-026719f701e3)
 
 ---
+## 📂 Data Source
 
-## 🖥️ Dashboard Preview
+Raw data sourced from Kaggle's public Walmart sales dataset, widely used in data science education.  
+🔗 [Walmart Recruiting - Store Sales Forecasting](https://www.kaggle.com/datasets/aslanahmedov/walmart-sales-forecast)
+
+- 45 stores · 3 years (2010–2012) · 6,435 weekly records
+- Original columns: Store, Date, Weekly Sales, Holiday Flag, Temperature, Fuel Price, CPI, Unemployment
+---
+
+## 🖥️ Dashboard Structure
 
 > *Built in Power BI Desktop · Walmart brand theme (#004C97 · #FFC220)*
 
-**Page 1 — Main Dashboard:**
-- 📊 Quarterly sales trend line (2010–2012)
-- 📅 Average monthly sales by week type (Holiday vs Normal)
-- 🍩 Sales distribution by holiday event type
-- 📉 Unemployment trend with macro context annotation
-- 🗂️ Store performance overlap matrix (Overall Tier × Holiday Sensitivity)
-- 🔢 6 dynamic KPI cards — Total Sales, Avg Weekly Sales, Holiday Lift, Peak Month, Store Count, Top Store
+**Page 1 — Executive Overview:**
+- 📊 Sales trend line by year, quarter, month (2010–2012)
+- 📅 Average monthly sales by week type — Holiday vs Normal, all 12 months
+- 🍩 Average sales distribution by holiday event type (Thanksgiving, Super Bowl, New Year's Eve, etc.)
+- 📉 Average unemployment trend 
+- 🗂️ Store performance overlap matrix — Overall Tier × Holiday Sensitivity
+- 🔢 6 dynamic KPI cards — Total Sales, Average Weekly Sales, Holiday Lift, Peak Month, Store Count, Top Store
 - 🔽 Interactive Year slicer filtering all visuals simultaneously
 
-**Page 2 — Sales Outlook (Forecast):**
-- 📈 Annual bar chart 2010–2015 showing actuals + projected growth
-- Forecast years clearly distinguished from actuals
-- Assumption disclaimer embedded on page
+**Page 2 — Store Intelligence:**
+- 🟢 Star stores — Store 10 & 19 (High Performer + Holiday Driven)
+- 🟡 Inisght stores stores — Store 5, 16, 29 (Underperformer + Holiday Driven)
+- 🔴 Priority stores — Store 36, 37, 38, 44 (Underperformer + Holiday Resistant)
+- 💡 Business implications and strategic recommendations per category
+
+**Page 3 — Sales Outlook:**
+- 📈 Annual bar chart 2010–2015
+- Forecast methodology panel — 4-step explanation
+- Growth rate commentary — why +2.6% was selected over the flat 2010→2011 rate
+- Analyst's comments
 
 ---
 
@@ -37,13 +56,16 @@ The dashboard was designed for a **board-level audience**: clean layout, dynamic
 
 | Insight | Finding |
 |---|---|
-| Holiday lift | Holiday weeks average **1.08×** normal weeks chain-wide |
+| Holiday lift | Holiday weeks average **1.07×** normal weeks chain-wide |
+| Thanksgiving | **32.31%** of holiday sales — highest contribution AND highest per-week avg at $1.5M |
+| Christmas | **21.1%** contribution — lowest share, worth investigating underperformance |
 | Peak month | **December** consistently highest — avg $1.4M/week |
-| Star stores | Only **2 of 45** stores are both High Performers overall AND Holiday Driven |
-| Problem stores | **4 stores** are Underperformers AND Holiday Resistant — need strategic review |
-| Macro trend | Unemployment declined from **~9% → ~7%** (2010–2012), correlating with sales recovery (r = −0.11) |
+| Star stores | Only **2 of 45** stores are both High Performers AND Holiday Driven |
+| Holiday-rescued | **3 stores** are Underperformers saved by holiday traffic — fragile position |
+| Priority review | **4 stores** are weak overall AND holiday resistant — dual failure |
+| Macro correlation | Unemployment r = −0.11, CPI r = −0.07, Fuel Price r = +0.01 — all weak |
 | Top performer | **Store #20** — highest total revenue across all 3 years |
-| Forecast | At +2.6% growth, projected to reach **.71B by 2015** (+10.7% vs 2011 baseline) |
+| Forecast | At +2.6% growth, projected to reach **$2.71B by 2015** (+10.7% from 2012) |
 
 ---
 
@@ -59,7 +81,7 @@ MySQL (SQL cleaning & aggregation)
 Excel (estimation, forecasting, classification)
    │
    ▼
-Power BI (data model, DAX measures, dashboard)
+Power BI (data model, DAX measures, 3-page dashboard)
 ```
 
 ---
@@ -67,7 +89,7 @@ Power BI (data model, DAX measures, dashboard)
 ## 🛠️ Step 1 — SQL Cleaning & Aggregation
 
 **Tool:** MySQL  
-**File:** `aggregate.sql`
+**File:** `Janie Nguyen_Walmart_SQL.sql`
 
 ### What was done:
 - Converted `Date` column from string to proper `DATE` format using `STR_TO_DATE()`
@@ -99,7 +121,7 @@ ORDER BY Sales_lift_multiplier DESC;
 ## 📊 Step 2 — Excel Analysis & Estimation
 
 **Tool:** Microsoft Excel  
-**Files:** `Cleaned_Data.xlsx` · `Sales_Growth_Final.xlsx` · `Store_Tiers.xlsx`
+**Files:** `Janie Nguyen_Walmart Sales Cleaned.xlsx`
 
 ### Challenge: Partial Year Data
 The dataset had **missing months**:
@@ -151,28 +173,19 @@ Holiday sensitivity classified from SQL-derived lift multiplier:
 
 Extended actuals to 2015 using **seasonal decomposition + growth rate** methodology:
 
-**Step 1 — Determine growth rate**
-Analyzed macro context to justify the rate assumption:
-- 2010→2011 YoY: **−0.19%** (post-recession paralysis, high unemployment ~9%)
-- 2011→2012 YoY: **+2.57%** (economic recovery, unemployment declining to ~7%)
-- Selected **+2.6%** as the base rate — reflects recovery momentum, not the anomalous flat 2011
-
-**Step 2 — Apply seasonal weights**
-Each forecast month inherits the seasonal pattern from 2011 (base year), scaled up by the cumulative growth factor:
+- 2010→2011 YoY: **−0.19%** — excluded, reflects post-recession paralysis not structural performance
+- 2011→2012 YoY: **+2.57%** — selected as base, reflects genuine recovery as unemployment fell 9%→7%
+- Growth rate applied: **+2.6%** compounded annually
 
 ```
 Forecast Month (Year Y) = 2011 Monthly Sales × (1.026)^(Y - 2011)
 ```
-
-**Step 3 — Projected annual totals**
 
 | Year | Projected Total | Growth |
 |---|---|---|
 | 2013 | $2.58B | +2.6% |
 | 2014 | $2.64B | +2.6% |
 | 2015 | $2.71B | +2.6% |
-
-**Forecast presented on a dedicated Excel sheet** (`Sales_Growth_Final.xlsx`) and a **separate Power BI page** (`Sales Outlook`) — clearly separated from actuals to avoid misrepresentation.
 
 > ⚠️ Forecast is directional only. Based on a single growth assumption. Do not present as audited projections.
 
@@ -181,16 +194,17 @@ Forecast Month (Year Y) = 2011 Monthly Sales × (1.026)^(Y - 2011)
 ## 📐 Step 3 — Power BI Data Model
 
 **Tool:** Power BI Desktop  
-**File:** `Walmart_Dashboard.pbix`
+**File:** `Janie Nguyen_Walmart Project.pbix`
+**[Live View](https://app.powerbi.com/reportEmbed?reportId=726acd5f-be36-429f-8422-30da4ca44ffe&autoAuth=true&ctid=a36450eb-db06-42a7-8d1b-026719f701e3)**
 
-### Tables imported:
-| Table | Rows | Purpose |
+### Tables imported from `Janie Nguyen_Walmart Sales Cleaned.xlsx`:
+| Tab | Rows | Purpose |
 |---|---|---|
 | `Cleaned Data` | 6,435 | Main fact table — weekly sales, macro factors |
 | `Sales by Month` | 72 | Monthly aggregated with estimates + forecast |
 | `Sales Tiers by Store` | 45 | Store dimension — Overall Tier, Holiday Tier |
 | `Holiday Lift Ratio` | 45 | Per-store holiday sensitivity classification |
-| `Date Bridge` | 36 | Bridge table enabling cross-table slicer filtering |
+| `Date Bridge` | 36 | DAX-created bridge table for cross-table slicer filtering |
 
 ### Data Model Architecture:
 ```
@@ -212,13 +226,6 @@ Sales Tiers by Store (1)
 ### KPI Measures
 
 ```dax
--- Holiday Sales Lift
-Holiday Sales Lift = 
-VAR AvgHoliday = CALCULATE(AVERAGE('Cleaned Data'[Weekly Sales]), 
-                 'Cleaned Data'[Week Type] = "Holiday")
-VAR AvgNormal  = CALCULATE(AVERAGE('Cleaned Data'[Weekly Sales]), 
-                 'Cleaned Data'[Week Type] = "Normal")
-RETURN FORMAT(DIVIDE(AvgHoliday, AvgNormal), "0.00") & "x"
 
 -- Peak Month
 Peak Month = 
@@ -256,6 +263,44 @@ RETURN
 
 ---
 
+## 🧠 Business Implications & Strategic Insights
+
+### December vs November — two different types of strength
+
+- November has one massive week, **Thanksgiving at $1.47M***, that pulls the whole month up. But outside of that one event, November's normal weeks average just $1.04M, which is nothing special. 
+- December works differently. Christmas week is actually underwhelming at $0.96M — below normal week average. But December's normal weeks are the **strongest of any month at $1.36M***, because people are naturally shopping more throughout the entire month — buying gifts, stocking up for parties, preparing for the holidays — without needing a specific event to trigger it. So when you average all of December's weeks together, it comes out higher than any other month.
+- November wins on one dramatic night. December wins because every night is busy.
+- Both end up as top two months, but they need completely different preparation — **November needs to nail Thanksgiving execution, December needs consistent inventory depth and staffing across all four weeks***, not just Christmas week.
+
+---
+
+### Not all holidays are worth the same investment
+
+- In terms of average weekly sales contribution, Thanksgiving/Black Friday leads at 32.31% ($1.5M avg), followed by Super Bowl & Valentine's (23.7%, $1.1M), Christmas (22.89%, $1.0M), and Labor Day (21.1%, $1.0M).
+- Thanksgiving dominates not just in share but in per-week value — it generates the highest average weekly revenue of any event.
+- If Walmart is allocating the same promotional budget across all four events, that's a misallocation — **Thanksgiving deserves disproportionate investment***. The product lines most likely driving Thanksgiving's spike (seasonal food, beverages, household supplies) are worth analyzing to deepen those assortments ahead of peak season.
+
+---
+
+### Some stores are being rescued by holidays — and that's a risk
+
+- Stores 5, 16, and 29 are Underperformers overall but show strong holiday responsiveness. Seasonal weeks are inflating their annual totals and masking weak baseline performance. 
+- The likely root cause is location — these stores draw destination shoppers during holidays but haven't earned habitual everyday visits. More promotions won't fix that. The real question is **why customers don't come back between holidays***, and whether that's a competition, convenience, or in-store experience problem. If the baseline doesn't improve within two cycles, format reconsideration is warranted despite their seasonal strength.
+
+---
+
+### Macro factors barely move the needle
+
+CPI, unemployment, and fuel price all show **very weak correlation*** with weekly sales (r = −0.11, −0.07, +0.01). Walmart's performance is largely insulated from broader economic shifts — customers keep coming regardless of inflation or gas prices. Notably, sales recovered in line with employment improvement (2011→2012), not against it. Walmart didn't benefit from economic stress — it recovered as the economy recovered. Store execution and location appear to matter far more than any macro variable in this dataset.
+
+---
+
+### The two stores worth studying closely
+
+Only Store 10 ($271.6M, 1.12x lift) and Store 19 ($206.6M, 1.10x lift) are strong on both dimensions — high overall sales and strong holiday responsiveness. Most top-revenue stores like Store 20 (the overall leader at $301.4M) are Holiday Neutral, meaning their strength comes from consistent everyday traffic alone. Stores 10 and 19 have both. That **dual strength*** is rare across 45 stores and worth a deep operational review — their practices around staffing, inventory, and promotions likely contain **lessons replicable across the broader network***.
+
+---
+
 ## 📁 File Structure
 
 ```
@@ -264,21 +309,24 @@ walmart-sales-dashboard/
 ├── README.md
 │
 ├── data/
-│   ├── Walmart_Sales_raw.csv          # Original raw dataset
-│   ├── Cleaned_Data.xlsx              # Cleaned actuals (6,435 rows)
-│   ├── Sales_Growth_Final.xlsx        # Monthly sales + estimates + forecast
-│   └── Store_Tiers.xlsx               # Store classifications
+│   ├── Walmart_Sales_raw.csv                             # Original raw dataset
+│   └── Janie Nguyen_Walmart Sales Cleaned.xlsx           # All Excel work:
+│       ├── Cleaned Data                                  # 6,435 weekly sales records
+│       ├── Sales by Month                                # Monthly aggregated + estimates + forecast
+│       ├── Sales Tiers by Store                          # Overall & Holiday Tier classifications
+│       ├── Holiday Lift Ratio                            # Per-store holiday sensitivity
+│       ├── Sales vs Macroeconomic Factors                # CPI, Unemployment, Fuel Price
+│       └── Annual Sales Unadjusted                       # Raw annual totals before estimation
 │
 ├── sql/
-│   └── aggregate.sql                  # Full SQL cleaning & aggregation script
+│   └── Janie Nguyen_Walmart_SQL.sql                      # SQL cleaning & aggregation script
 │
 ├── powerbi/
-│   └── Walmart_Dashboard.pbix         # Power BI dashboard file
-│
-└── screenshots/
-    ├── dashboard_page1.png            # Main dashboard screenshot
-    ├── dashboard_page2_forecast.png   # Sales Outlook page screenshot
-    └── data_model.png                 # Power BI model view
+│   └── Janie Nguyen_Walmart Project.pbix                 # 3-page Power BI dashboard
+│       Live: [View Dashboard](https://app.powerbi.com/reportEmbed?reportId=726acd5f-be36-429f-8422-30da4ca44ffe&autoAuth=true&ctid=a36450eb-db06-42a7-8d1b-026719f701e3)
+└── dashboard preview/
+    ├── Janie Nguyen_Walmart Project Dashboard Preview.png # Power BI preview
+    └── Janie Nguyen_Walmart Power BI Data Model.png       # Power BI model view
 ```
 
 ---
@@ -289,15 +337,15 @@ walmart-sales-dashboard/
 |---|---|
 | **MySQL** | Data cleaning, type conversion, aggregation, self-joins |
 | **Microsoft Excel** | Seasonal decomposition, estimation, classification, forecasting |
-| **Power BI Desktop** | Data modeling, DAX measures, interactive dashboard |
+| **Power BI Desktop** | Data modeling, DAX measures, 3-page interactive dashboard |
 | **DAX** | KPI measures, conditional formatting, dynamic filtering |
 
 ---
 
 ## ⚠️ Data Notes
 
-- **Estimated values**: Jan 2010 and Nov–Dec 2012 are seasonally estimated using 2011 as the base year. These are clearly flagged throughout and should not be presented as audited figures.
-- **Forecast values** (2013–2015): Based on +2.6% annual growth assumption derived from the 2011→2012 recovery trend. Treated as directional only.
+- **Estimated values**: Jan 2010 and Nov–Dec 2012 are seasonally estimated using 2011 as the base year. Clearly flagged throughout — do not present as audited figures.
+- **Forecast values** (2013–2015): Based on +2.6% annual growth assumption derived from the 2011→2012 recovery trend. Directional only.
 - **Raw data source**: Public Walmart sales dataset widely used in data science education.
 - **Holiday classification**: Based on date ranges — some edge cases may differ from Walmart's actual promotional calendar.
 
@@ -305,6 +353,8 @@ walmart-sales-dashboard/
 
 ## 👤 Author
 
-Built as a portfolio project demonstrating end-to-end data analytics skills across SQL, Excel, and Power BI.
+**Janie Nguyen**  
+Financial Analyst | SQL · Excel · Power BI · DAX
 
-*Connect on LinkedIn · View more projects on GitHub*
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/janieanhnguyen/))
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-black)](https://github.com/janienguyen2610)
