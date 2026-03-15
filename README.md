@@ -1,7 +1,7 @@
 # 🛒 Walmart Store Sales Performance Dashboard
 ### End-to-End Retail Analytics | SQL · Excel · Power BI · DAX
 
-![Dashboard Preview](dashboard_preview.png)
+![Dashboard Preview](https://github.com/janienguyen2610/walmart-sales/blob/237aae36aee071aad03cde97827c989bcf66fbe6/Walmart_Dashboard_Preview.png)
 
 ---
 
